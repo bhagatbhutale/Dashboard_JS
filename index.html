@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboards in js</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=local_mall" />
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=trending_up"
+    />
 
     <style>
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-</style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -23,72 +27,174 @@
       <aside>
         <div class="top">
           <div class="logo">
-            <h2>C <span class="name">BHAGAT</span></h2>
+            <h2>B <span class="name">BHAGAT</span></h2>
           </div>
 
           <div class="close">
-        <span class="material-symbols-outlined">
-close
-</span>
-
+            <span class="material-symbols-outlined"> close </span>
           </div>
         </div>
         <!-- end top -->
-         <div class="sidebar">
-            <a href="#">
-                <span class="material-symbols-outlined">grid_view</span>
-                <h3>Dashboard</h3>
-            </a>
+        <div class="sidebar">
+          <a href="#">
+            <span class="material-symbols-outlined">grid_view</span>
+            <h3>Dashboard</h3>
+          </a>
 
-            <a href="#">
-                <span class="material-symbols-outlined">person_outline</span>
-                <h3>Customers</h3>
-            </a>
-            <a href="#">
-                <span class="material-symbols-outlined">insights</span>
-                <h3>Analytics</h3>
-            </a>
+          <a href="#" class="active">
+            <span class="material-symbols-outlined">person_outline</span>
+            <h3>Customers</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined">insights</span>
+            <h3>Analytics</h3>
+          </a>
 
-            <a href="#">
-                <span class="material-symbols-outlined">mail_outline</span>
-                <h3>Message</h3>
-                <span class="msg_count">14</span>
-            </a>
+          <a href="#">
+            <span class="material-symbols-outlined">mail_outline</span>
+            <h3>Message</h3>
+            <span class="msg_count">14</span>
+          </a>
 
-            <a href="#">
-                <span class="material-symbols-outlined">receipt_long
-                </span>
-                <h3>Products</h3>
-            </a>
-            <a href="#">
-                <span class="material-symbols-outlined">report_gmailerrorred</span>
-                <h3>Reports</h3>
-            </a>
+          <a href="#">
+            <span class="material-symbols-outlined">receipt_long </span>
+            <h3>Products</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined">report_gmailerrorred</span>
+            <h3>Reports</h3>
+          </a>
 
-            <a href="#">
-                <span class="material-symbols-outlined">settings</span>
-                <h3>Settings</h3>
-            </a>
+          <a href="#">
+            <span class="material-symbols-outlined">settings</span>
+            <h3>Settings</h3>
+          </a>
 
-            <a href="#">
-                <span class="material-symbols-outlined">add</span>
-                <h3>Add Product</h3>
-            </a>
-            <a href="#">
-                <span class="material-symbols-outlined">logout</span>
-                <h3>logout</h3>
-            </a>
-         </div>
+          <a href="#">
+            <span class="material-symbols-outlined">add</span>
+            <h3>Add Product</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined">logout</span>
+            <h3>logout</h3>
+          </a>
+        </div>
       </aside>
 
       <!-- main section start -->
       <main>
-        <h1>Main</h1>
+        <h1>Dashbboard</h1>
+
+        <div class="date">
+          <input type="date" />
+        </div>
+
+        <div class="insights">
+
+          <!-- start selling  -->
+          <div class="sales">
+            <span class="material-symbols-sharp"> trending_up </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Totals Sales</h3>
+                <h1>$25033</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle r="30" cy="40" cx="40" ></circle>
+                </svg>
+                <div class="number">80%</div>
+              </div>
+            </div>
+            <small>Last 24 Sales</small>
+          </div>
+          <!-- end sellling -->
+
+          <!-- start expences  -->
+          <div class="expenses">
+            <!-- local_mall -->
+            <span class="material-symbols-sharp">trending_up</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Totals Expenses</h3>
+                <h1>$25033</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle r="30" cy="40" cx="40" ></circle>
+                </svg>
+                <div class="number">80%</div>
+              </div>
+            </div>
+            <small>Last 24 Sales</small>
+          </div>
+
+           <!-- start selling  -->
+          <div class="income">
+            <!-- stacked_line_chart -->
+            <span class="material-symbols-sharp">trending_up</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Totals Incomes</h3>
+                <h1>$25033</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle r="30" cy="40" cx="40" ></circle>
+                </svg>
+                <div class="number">80%</div>
+              </div>
+            </div>
+            <small>Last 24 Sales</small>
+          </div>
+          <!-- end sellling -->
+        </div>
+<!-- end insights -->
+
+<!-- Start Recents orders  -->
+ <div class="recent_orders">
+  <h1>Recent Orders</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Product Number</th>
+        <th>Payments</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Mini USB</td>
+        <td>456</td>
+        <td>Duo</td>
+        <td class="warning">Pending</td>
+        <td class="primary">Details</td>
+      </tr>
+
+      <tr>
+        <td>Mini USB</td>
+        <td>456</td>
+        <td>Duo</td>
+        <td class="warning">Pending</td>
+        <td class="primary">Details</td>
+      </tr>
+    </tbody>
+  </table>
+ </div>
+
+
+
+ <!-- End recents orders -->
+
       </main>
+
+      <!-- main sections ends -->
 
       <!-- right section start -->
       <div class="right">
-        <h1>Right</h1>
+        <h1>right</h1>
       </div>
 
       <!-- end right section -->
