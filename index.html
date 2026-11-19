@@ -8,7 +8,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=local_mall" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=local_mall"
+    />
     <link rel="stylesheet" href="./CSS/style.css" />
     <link
       rel="stylesheet"
@@ -30,7 +37,7 @@
             <h2>B <span class="name">BHAGAT</span></h2>
           </div>
 
-          <div class="close">
+          <div class="close" id="close_btn">
             <span class="material-symbols-outlined"> close </span>
           </div>
         </div>
@@ -90,7 +97,6 @@
         </div>
 
         <div class="insights">
-
           <!-- start selling  -->
           <div class="sales">
             <span class="material-symbols-sharp"> trending_up </span>
@@ -101,7 +107,7 @@
               </div>
               <div class="progress">
                 <svg>
-                  <circle r="30" cy="40" cx="40" ></circle>
+                  <circle r="30" cy="40" cx="40"></circle>
                 </svg>
                 <div class="number">80%</div>
               </div>
@@ -121,7 +127,7 @@
               </div>
               <div class="progress">
                 <svg>
-                  <circle r="30" cy="40" cx="40" ></circle>
+                  <circle r="30" cy="40" cx="40"></circle>
                 </svg>
                 <div class="number">80%</div>
               </div>
@@ -129,7 +135,7 @@
             <small>Last 24 Sales</small>
           </div>
 
-           <!-- start selling  -->
+          <!-- start selling  -->
           <div class="income">
             <!-- stacked_line_chart -->
             <span class="material-symbols-sharp">trending_up</span>
@@ -140,7 +146,7 @@
               </div>
               <div class="progress">
                 <svg>
-                  <circle r="30" cy="40" cx="40" ></circle>
+                  <circle r="30" cy="40" cx="40"></circle>
                 </svg>
                 <div class="number">80%</div>
               </div>
@@ -149,55 +155,208 @@
           </div>
           <!-- end sellling -->
         </div>
-<!-- end insights -->
+        <!-- end insights -->
 
-<!-- Start Recents orders  -->
- <div class="recent_orders">
-  <h1>Recent Orders</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Product Name</th>
-        <th>Product Number</th>
-        <th>Payments</th>
-        <th>Status</th>
-      </tr>
-    </thead>
+        <!-- Start Recents orders  -->
+        <div class="recent_orders">
+          <h1>Recent Orders</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Product Number</th>
+                <th>Payments</th>
+                <th>Status</th>
+              </tr>
+            </thead>
 
-    <tbody>
-      <tr>
-        <td>Mini USB</td>
-        <td>456</td>
-        <td>Duo</td>
-        <td class="warning">Pending</td>
-        <td class="primary">Details</td>
-      </tr>
+            <tbody>
+              <tr>
+                <td>Mini USB</td>
+                <td>456</td>
+                <td>Duo</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
 
-      <tr>
-        <td>Mini USB</td>
-        <td>456</td>
-        <td>Duo</td>
-        <td class="warning">Pending</td>
-        <td class="primary">Details</td>
-      </tr>
-    </tbody>
-  </table>
- </div>
+              <tr>
+                <td>Mini USB</td>
+                <td>456</td>
+                <td>Duo</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
 
+              <tr>
+                <td>Mini USB</td>
+                <td>456</td>
+                <td>Duo</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
 
+              <tr>
+                <td>Mini USB</td>
+                <td>456</td>
+                <td>Duo</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
 
- <!-- End recents orders -->
+              <tr>
+                <td>Mini USB</td>
+                <td>456</td>
+                <td>Duo</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
 
+              <tr>
+                <td>Mini USB</td>
+                <td>456</td>
+                <td>Duo</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- End recents orders -->
       </main>
 
       <!-- main sections ends -->
 
       <!-- right section start -->
       <div class="right">
-        <h1>right</h1>
+        <div class="top">
+          <button id="menu_bar">
+            <!-- // menu icon  -->
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+
+          <div class="theme-toggler">
+            <!-- // light_mode icon  -->
+            <span class="material-symbols-outlined active">light_mode</span>
+            <!-- dark_mode icon  -->
+            <span class="material-symbols-outlined">dark_mode</span>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p><b>Bhagat</b></p>
+              <p>Admin</p>
+              <small class="text-muted"></small>
+            </div>
+
+            <div class="profile-photo">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                alt="Profile_Image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- // End Top  -->
+
+        <!-- start start update  -->
+        <div class="recent-updates">
+          <h2>Recent Updates</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                  alt=""
+                />
+              </div>
+              <div class="message">
+                <p><b>Bhagat</b> Received His Order</p>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-photo">
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                  alt=""
+                />
+              </div>
+              <div class="message">
+                <p><b>Bhagat</b> Received His Order</p>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-photo">
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                  alt=""
+                />
+              </div>
+              <div class="message">
+                <p><b>Bhagat</b> Received His Order</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // End Recent Updates  -->
+
+        <!-- start sales analytics  -->
+        <div class="sales_analytics">
+          <h2>Sales Analytics</h2>
+
+          <div class="item online">
+            <div class="icon">
+              <span class="material-symbols-outlined">shopping_cart</span>
+            </div>
+            <div class="right_text">
+              <div class="info">
+                <h3>Online Orders</h3>
+                <small class="text-muted">last Seen 2 Hours</small>
+              </div>
+              <h5 class="danger">-17%</h5>
+              <h3>3849</h3>
+            </div>
+          </div>
+
+          <div class="item online">
+            <div class="icon">
+              <span class="material-symbols-outlined">shopping_cart</span>
+            </div>
+            <div class="right_text">
+              <div class="info">
+                <h3>Online Orders</h3>
+                <small class="text-muted">last Seen 2 Hours</small>
+              </div>
+              <h5 class="danger">-17%</h5>
+              <h3>3849</h3>
+            </div>
+          </div>
+
+          <div class="item online">
+            <div class="icon">
+              <span class="material-symbols-outlined">shopping_cart</span>
+            </div>
+            <div class="right_text">
+              <div class="info">
+                <h3>Online Orders</h3>
+                <small class="text-muted">last Seen 2 Hours</small>
+              </div>
+              <h5 class="danger">-17%</h5>
+              <h3>3849</h3>
+            </div>
+          </div>
+        </div>
+        <!-- end sales analytics  -->
+        <div class="item add_products">
+          <div><span class="material-symbols-outlined">add</span></div>
+        </div>
       </div>
 
       <!-- end right section -->
     </div>
+
+    <script src="./JS/app.js"></script>
   </body>
 </html>
